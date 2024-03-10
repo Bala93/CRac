@@ -1,0 +1,9 @@
+name: adam
+lr: 0.001
+weight_decay: 0
+
+object:
+  _target_: torch.optim.Adam
+  lr: ${optim.lr}
+  betas: [0.9, 0.999]
+  weight_decay: ${optim.weight_decay}

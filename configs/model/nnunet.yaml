@@ -1,0 +1,10 @@
+name: nnunet 
+
+num_classes: 5
+num_inp_channels: 1
+
+
+object:
+  _target_: calibrate.net.nnunet.NNUNet
+  input_channels: ${model.num_inp_channels}
+  num_classes: ${model.num_classes}

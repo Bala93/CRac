@@ -1,0 +1,35 @@
+name: spatial_aug_lag_class
+
+margin: 1
+lambd_min: 1e-6
+lambd_max: 1e6
+lambd_step: 1
+penalty: phr
+rho: 1
+rho_step: 10
+gamma: 1.2
+tao: 0.9
+vis_lambd_hist: False
+normalize: True
+is_softmax: False
+is_foreground: False
+constr_type: abs
+is_undersample: False
+
+object:
+  _target_: calibrate.lagrangian.SpatialAugLagrangianClass
+  num_classes: ${model.num_classes}
+  margin: ${lag.margin}
+  penalty: ${lag.penalty}
+  lambd_min: ${lag.lambd_min}
+  lambd_max: ${lag.lambd_max}
+  lambd_step: ${lag.lambd_step}
+  rho_min: ${lag.rho}
+  rho_step: ${lag.rho_step}
+  gamma: ${lag.gamma}
+  tao: ${lag.tao}
+  normalize: ${lag.normalize}
+  is_softmax: ${lag.is_softmax}
+  is_foreground: ${lag.is_foreground}
+  constr_type: ${lag.constr_type}
+  is_undersample: ${lag.is_undersample}
