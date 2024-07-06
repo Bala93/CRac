@@ -34,7 +34,7 @@ pip install -r requirements.txt
 
 python setup.py develop
 
-## Citation
+## 📝 Citation
 ```
 @article{murugesan2024class,
   title={Class and Region-Adaptive Constraints for Network Calibration},
