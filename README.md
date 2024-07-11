@@ -1,6 +1,6 @@
 # Class and Region-Adaptive Constraints for Network Calibration (CRac) (MICCAI 2024)
 
-## Abstract
+## Abstract [![arXiv](https://img.shields.io/badge/arXiv-2403.12364-b31b1b.svg)](https://arxiv.org/abs/2403.12364)
 In this work, we present a novel approach to calibrate segmentation networks that considers the inherent challenges posed by different categories and object regions. In particular, we present a formulation that integrates class and region-wise constraints into the learning objective, with multiple penalty weights to account for class and region differences. Finding the optimal penalty weights manually, however, might be unfeasible, and potentially hinder the optimization process. To overcome this limitation, we propose an approach based on Class and Region-Adaptive constraints (CRaC), which allows to learn the class and region-wise penalty weights during training. CRaC is based on a general Augmented Lagrangian method, a well-established technique in constrained optimization. Experimental results on two popular segmentation benchmarks, and two well-known segmentation networks, demonstrate the superiority of CRaC compared to existing approaches.
 
 ## ACDC
